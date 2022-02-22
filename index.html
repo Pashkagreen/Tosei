@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tosei - продажа авто с пробегом</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="navbar__logo">
+        <a href="#">
+          <svg class="logo">
+            <use xlink:href="/assets/svg/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <h1 class="navbar__title">TOSEI</h1>
+      </div>
+
+      <ul class="navbar__items">
+        <a href="#">
+          <li class="navbar__item">Услуги</li>
+        </a>
+        <a href="#">
+          <li class="navbar__item">Каталог техники</li>
+        </a>
+        <a href="#">
+          <li class="navbar__item">Аукционы</li>
+        </a>
+        <button class="accordion" data-toggle-id="accordion">Информация</button>
+        <div class="panel" id="accordion">
+          <a href="#">
+            <li class="navbar__item">О нас</li>
+          </a>
+          <a href="#">
+            <li class="navbar__item">Отзывы</li>
+          </a>
+          <a href="#">
+            <li class="navbar__item">Контакты</li>
+          </a>
+        </div>
+
+      </ul>
+
+      <div class="navbar__socials">
+        <a href="#" class="navbar__socilas-whatsapp">
+          <svg>
+            <use xlink:href="assets/svg/sprite.svg#whatsapp"></use>
+          </svg>
+        </a>
+        <a href="#" class="navbar__socilas-instagram">
+          <img src="assets/svg/insta.png" alt="instagram">
+        </a>
+        <a href="#" class="navbar__socilas-youtube">
+          <svg>
+            <use xlink:href="assets/svg/sprite.svg#youtube"></use>
+          </svg>
+        </a>
+      </div>
+
+
+    </div>
+    <div class="wrapper">
+
+      <div class="navbar__logo" id="respLogo">
+        <a href="#">
+          <svg class="logo">
+            <use xlink:href="/assets/svg/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <h1 class="navbar__title">TOSEI</h1>
+      </div>
+
+      <div class="header" id="header">
+        <h4 class="header__title">Автомобили из Японии с доставкой по всей России</h4>
+        <div class="header__info">
+          <h3 class="header__info-phone">8 800 250-78-07</h3>
+          <h4 class="header__info-info">Бесплатный звонок по всей России</h4>
+        </div>
+
+        <!--Burger menu-->
+        <div class="burger-menu">
+          <a href="" class="burger-menu_button">
+            <spun class="burger-menu_lines"></spun>
+          </a>
+          <ul class="burger-menu_nav">
+            <a href="#" class="burger-menu_link">
+              <li>Услуги</li>
+            </a>
+            <a href="#" class="burger-menu_link">
+              <li>Каталог техники</li>
+            </a>
+            <a href="#" class="burger-menu_link">
+              <li>Аукционы</li>
+            </a>
+            <a href="#" class="burger-menu_link">
+              <li>Информация</li>
+            </a>
+
+            <a href="#" class="burger-menu_link">
+              <li>О нас</li>
+            </a>
+            <a href="#" class="burger-menu_link">
+              <li>Отзывы</li>
+            </a>
+            <a href="#" class="burger-menu_link">
+              <li>Контакты</li>
+            </a>
+            <div class="header__info" id="headerInfo">
+              <h3 class="header__info-phone">8 800 250-78-07</h3>
+              <h4 class="header__info-info">Бесплатный звонок по всей России</h4>
+            </div>
+          </ul>
+          <div class="burger-menu_overlay"></div>
+        </div>
+        <!--End of burger menu-->
+
+      </div>
+
+
+      <section class="search">
+        <h1 class="search__text">Доставим любую технику из Японии за 3 недели</h1>
+        <form action="" class="search__form">
+          <div class="checkboxes">
+
+            <label class="tax">Полная пошлина
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="tax">Распил или конструктор
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+          <div class="selectors">
+            <div class="selectors-options">
+              <div class="custom-select">
+                <span class="custom-select-name">Тип техники</span>
+                <select>
+                  <option value="0">Не выбрано</option>
+                  <option value="1">Автомобиль</option>
+                  <option value="2">Мотоцикл</option>
+                  <option value="3">Микроавтобус</option>
+                  <option value="4">Фургон</option>
+                  <option value="5">Прицеп</option>
+                  <option value="6">Автобус</option>
+                </select>
+              </div>
+
+              <div class="custom-select">
+                <span class="custom-select-name">Марка</span>
+                <select>
+                  <option value="0">Не выбрано</option>
+                  <option value="1">Audi</option>
+                  <option value="2">BMW</option>
+                  <option value="3">Citroen</option>
+                  <option value="4">Ford</option>
+                  <option value="5">Honda</option>
+                  <option value="6">Jaguar</option>
+                  <option value="7">Land Rover</option>
+                  <option value="8">Mercedes</option>
+                  <option value="9">Mini</option>
+                  <option value="10">Nissan</option>
+                  <option value="11">Toyota</option>
+                  <option value="12">Volvo</option>
+                </select>
+              </div>
+
+              <div class="custom-select">
+                <span class="custom-select-name">Модель</span>
+                <select>
+                  <option value="0">Не выбрано</option>
+                  <option value="1">Audi</option>
+                  <option value="2">BMW</option>
+                  <option value="3">Citroen</option>
+                  <option value="4">Ford</option>
+                  <option value="5">Honda</option>
+                  <option value="6">Jaguar</option>
+                  <option value="7">Land Rover</option>
+                  <option value="8">Mercedes</option>
+                  <option value="9">Mini</option>
+                  <option value="10">Nissan</option>
+                  <option value="11">Toyota</option>
+                  <option value="12">Volvo</option>
+                </select>
+              </div>
+
+
+
+              <div class="custom-select">
+                <span class="custom-select-name">Год выпуска</span>
+                <select>
+                  <option value="0">От</option>
+                  <option value="1">2022</option>
+                  <option value="2">2021</option>
+                  <option value="3">2020</option>
+                  <option value="4">2019</option>
+                </select>
+              </div>
+
+              <div class="custom-select">
+                <span class="custom-select-name"></span>
+                <select>
+                  <option value="0">До</option>
+                  <option value="1">2021</option>
+                  <option value="2">2020</option>
+                  <option value="3">2019</option>
+                  <option value="4">2018</option>
+                  <option value="5">2017</option>
+                </select>
+              </div>
+
+              <!---->
+
+
+              <div class="custom-select">
+                <span class="custom-select-name">Трансмиссия</span>
+                <select>
+                  <option value="0">Не выбрано</option>
+                  <option value="0">МКПП</option>
+                  <option value="1">АКПП</option>
+                </select>
+              </div>
+
+              <div class="custom-select" id="searchAccordion">
+                <span class="custom-select-name">Пробег</span>
+                <select>
+                  <option value="0">Не выбрано</option>
+                  <option value="1">До 100 тыс</option>
+                  <option value="2">До 200 тыс</option>
+                  <option value="2">До 300 тыс</option>
+
+                </select>
+              </div>
+
+              <div class="custom-select">
+                <span class="custom-select-name">Цена</span>
+                <select>
+                  <option value="0">Не выбрано</option>
+                  <option value="1">до 200 тыс. руб.</option>
+                  <option value="1">до 500 тыс. руб.</option>
+                  <option value="1">до 1 млн. руб.</option>
+                  <option value="1">выше 1 млн. руб.</option>
+                </select>
+              </div>
+            </div>
+
+
+            <!---->
+            <button class="button">Найти</button>
+
+          </div>
+
+          <div class="search__form-info">
+            <div class="exist">
+              <span class="existence">Автомобилей в наличии:</span>
+              <span class="existence-amount">228</span>
+            </div>
+            <form action="" class="details-search">
+              <button class="accordion accordionSearch" data-toggle-id="searchAccordion">Расширенный
+                поиск</button>
+            </form>
+          </div>
+        </form>
+      </section>
+
+      <section class="catalog">
+        <h2>Популярные автомобили</h2>
+        <form action="" class="catalog__form">
+          <label>
+            Все
+            <input type="radio" class="modern-radio" value="1" name="a">
+            <span></span>
+          </label>
+          <label>
+            В наличии
+            <input type="radio" class="modern-radio" value="2" name="a">
+            <span></span>
+          </label>
+          <label>
+            Под заказ
+            <input type="radio" class="modern-radio" value="2" name="a">
+            <span></span>
+          </label>
+
+        </form>
+      </section>
+
+
+
+    </div>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="/scripts/script.js"></script>
+</body>
+
+</html>

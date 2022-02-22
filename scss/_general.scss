@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,700&display=swap");
+
+// Colors
+
+$red: rgba(205, 0, 0, 1);
+$yellow: rgba(235, 180, 40, 1);
+$green: rgba(115, 219, 67, 1);
+$white-grey: rgba(226, 226, 226, 1);
+$bg-lightgrey: rgba(247, 247, 249, 1);
+$bg-darkgrey: rgba(139, 139, 139, 1);
+$grey241: #f1f1f1;
+$black: black;
+$white: white;
+
+// Mixins
+
+@mixin flex($jc, $ac) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ac;
+}
+
+// Media-queries
+
+@media all and (min-width: 1080px) {
+  .burger-menu {
+    display: none;
+  }
+  #respLogo {
+    display: none;
+  }
+}
+@media all and (max-width: 1080px) {
+  .navbar {
+    display: none;
+  }
+  .header__title,
+  .header__info {
+    display: none;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  #respLogo {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  #headerInfo {
+    display: block;
+  }
+}
+
+// Basics
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.wrapper {
+  min-width: 1080px;
+}
+
+h4 {
+  font-weight: normal;
+  font-size: 14px;
+  color: black;
+}
