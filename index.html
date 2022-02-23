@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tosei - продажа авто с пробегом</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -124,7 +125,7 @@
 
       <section class="search">
         <h1 class="search__text">Доставим любую технику из Японии за 3 недели</h1>
-        <form action="" class="search__form">
+        <form action="" class="search__form inner-wrapper">
           <div class="checkboxes">
 
             <label class="tax">Полная пошлина
@@ -270,8 +271,8 @@
         </form>
       </section>
 
-      <section class="catalog">
-        <h2>Популярные автомобили</h2>
+      <section class="catalog inner-wrapper">
+        <h2 class="title">Популярные автомобили</h2>
         <form action="" class="catalog__form">
           <label>
             Все
@@ -288,8 +289,241 @@
             <input type="radio" class="modern-radio" value="2" name="a">
             <span></span>
           </label>
-
         </form>
+
+        <div class="catalog__cards">
+          <div class="catalog__cards-card">
+            <div class="card-photo">
+              <img src="./assets/images/honda.png" alt="Car">
+            </div>
+            <div class="card-info">
+              <span class="car-name">Honda Fit</span>
+              <div class="card-options">
+                <div class="option1">
+                  <span class="text">Объём двигателя:&nbsp; <p class="amount">1,2 л.</p></span>
+                  <span class="text">Год:&nbsp; <p class="year">2015</p></span>
+                  <span class="text">Пробег:&nbsp; <p class="mileage">54000</p></span>
+                  <p class="amount">Под полную пошлину</p>
+                </div>
+                <div class="option2">
+                  <span class="text">Привод:&nbsp; <p class="drive">задний</p></span>
+                  <span class="text">КПП:&nbsp; <p class="transmission">АКПП</p></span>
+                </div>
+                <div class="price">
+                  <span class="text">Стоимость во Владивостоке</span>
+                  <span class="car-price">630 000 ₽</span>
+                  <div class="car-status">В наличии</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog__cards-card">
+            <div class="card-photo">
+              <img src="./assets/images/bmw.png" alt="Car">
+            </div>
+            <div class="card-info">
+              <span class="car-name">BMW X5</span>
+              <div class="card-options">
+                <div class="option1">
+                  <span class="text">Объём двигателя:&nbsp; <p class="amount">3,0 л.</p></span>
+                  <span class="text">Год:&nbsp; <p class="year">2008</p></span>
+                  <span class="text">Пробег:&nbsp; <p class="mileage">500 000</p></span>
+                  <p class="amount">Под полную пошлину</p>
+                </div>
+                <div class="option2">
+                  <span class="text">Привод:&nbsp; <p class="drive">задний</p></span>
+                  <span class="text">КПП:&nbsp; <p class="transmission">АКПП</p></span>
+                </div>
+                <div class="price">
+                  <span class="text">Стоимость во Владивостоке</span>
+                  <span class="car-price">830 000 ₽</span>
+                  <div class="car-status">В наличии</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog__cards-card">
+            <div class="card-photo">
+              <img src="./assets/images/honda.png" alt="Car">
+            </div>
+            <div class="card-info">
+              <span class="car-name">Honda Fit</span>
+              <div class="card-options">
+                <div class="option1">
+                  <span class="text">Объём двигателя:&nbsp; <p class="amount">1,2 л.</p></span>
+                  <span class="text">Год:&nbsp; <p class="year">2015</p></span>
+                  <span class="text">Пробег:&nbsp; <p class="mileage">54000</p></span>
+                  <p class="amount">Под полную пошлину</p>
+                </div>
+                <div class="option2">
+                  <span class="text">Привод:&nbsp; <p class="drive">задний</p></span>
+                  <span class="text">КПП:&nbsp; <p class="transmission">АКПП</p></span>
+                </div>
+                <div class="price">
+                  <span class="text">Стоимость во Владивостоке</span>
+                  <span class="car-price">630 000 ₽</span>
+                  <div class="car-status">В наличии</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="catalog__showmore">Показать ещё</button>
+      </section>
+
+      <section class="advantages inner-wrapper">
+        <h2 class="advantages__title title">Наши преимущества</h2>
+        <div class="advantages__items">
+          <div class="advantages__items-card">
+            <img src="./assets/icons/globe.png" alt="">
+            <h5 class="card-title">20 лет на рынке</h5>
+            <p class="card-text">Мы транспортируем авто в порт Японии, грузим на судно и доставляем во Владивосток, где
+              проходит таможенное оформление</p>
+          </div>
+
+          <div class="advantages__items-card">
+            <img src="./assets/icons/globe.png" alt="">
+            <h5 class="card-title">Доставка по РФ</h5>
+            <p class="card-text">Мы транспортируем авто в порт Японии, грузим на судно и доставляем во Владивосток, где
+              проходит таможенное оформление</p>
+          </div>
+
+          <div class="advantages__items-card">
+            <img src="./assets/icons/globe.png" alt="">
+            <h5 class="card-title">Персональный менеджер</h5>
+            <p class="card-text">Мы транспортируем авто в порт Японии, грузим на судно и доставляем во Владивосток, где
+              проходит таможенное оформление</p>
+          </div>
+
+          <div class="advantages__items-card">
+            <img src="./assets/icons/globe.png" alt="">
+            <h5 class="card-title">Собственное представительство в Японии</h5>
+            <p class="card-text">Мы транспортируем авто в порт Японии, грузим на судно и доставляем во Владивосток, где
+              проходит таможенное оформление</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="feedbacks inner-wrapper">
+        <h2 class="feedbacks__title title">Отзывы</h2>
+        <div class="feedbacks__items">
+          <div class="feedbacks__items-item">
+            <iframe width="200" height="130" src="https://www.youtube.com/embed/h5PLKuo5hYw"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+            <div class="item-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <p class="customer">Геннадий Сергеевич</p>
+            <p class="customer-car">Toyota Allion</p>
+          </div>
+          <div class="feedbacks__items-item">
+            <iframe width="200" height="130" src="https://www.youtube.com/embed/h5PLKuo5hYw"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+            <div class="item-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <p class="customer">Геннадий Сергеевич</p>
+            <p class="customer-car">Toyota Allion</p>
+          </div>
+          <div class="feedbacks__items-item">
+            <iframe width="200" height="130" src="https://www.youtube.com/embed/h5PLKuo5hYw"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+            <div class="item-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <p class="customer">Геннадий Сергеевич</p>
+            <p class="customer-car">Toyota Allion</p>
+          </div>
+          <div class="feedbacks__items-item">
+            <iframe width="200" height="130" src="https://www.youtube.com/embed/h5PLKuo5hYw"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+            <div class="item-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <p class="customer">Геннадий Сергеевич</p>
+            <p class="customer-car">Toyota Allion</p>
+          </div>
+
+        </div>
+        <a target="_blank" href="https://www.youtube.com/channel/UCjZfH1n9_2E2Xd4PGppF5QQ"
+          class="feedbacks__showmore">Ещё отзывы</a>
+      </section>
+
+      <section class="about inner-wrapper">
+        <img src="./assets/images/man.png" alt="#" class="man">
+        <div class="about__info">
+          <h2 class="about__info-title title">Как происходит покупка</h2>
+          <div class="about__info-cards">
+            <div class="advantages__items-card">
+              <img src="./assets/icons/cv.png" alt="#">
+              <h5 class="card-title">Оставляете заявку</h5>
+              <p class="card-text">Вы оставляете заявку на сайте, либо связываетесь с нами удобным для вас способом.</p>
+            </div>
+
+            <div class="advantages__items-card">
+              <img src="./assets/icons/dialog.png" alt="#">
+              <h5 class="card-title">Заключаем договор</h5>
+              <p class="card-text">Заключаем договор,
+                Вы вносите гарантийный депозит.</p>
+            </div>
+            <div class="advantages__items-card">
+              <img src="./assets/icons/car.png" alt="#">
+              <h5 class="card-title">Подбор и покупка авто</h5>
+              <p class="card-text">Вам предлагаются подходящие варианты с аукционов, Вы принимаете решение, автомобиль
+                выкупается.</p>
+            </div>
+            <div class="advantages__items-card">
+              <img src="./assets/icons/ship.png" alt="#">
+              <h5 class="card-title">Доставка в РФ и оформление</h5>
+              <p class="card-text">Мы транспортируем авто в порт Японии, грузим на судно и доставляем во Владивосток,
+                где проходит таможенное оформление.</p>
+            </div>
+            <div class="advantages__items-card">
+              <img src="./assets/icons/truck.png" alt="#">
+              <h5 class="card-title">Доставка до вашего города</h5>
+              <p class="card-text">Мы доставляем авто в любой регион России выбранным Вами способом, либо Вы сами
+                забираете его во Владивостоке.</p>
+            </div>
+            <div class="advantages__items-card" id="order">
+              <h5 class="card-title">Оставить заявку</h5>
+              <svg>
+                <use xlink:href="/assets/svg/sprite.svg#big-envelope"></use>
+              </svg>
+            </div>
+
+          </div>
+        </div>
       </section>
 
 

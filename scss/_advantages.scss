@@ -1,0 +1,31 @@
+.advantages {
+  margin-bottom: 19px;
+}
+.advantages__title {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 28px;
+}
+.advantages__items {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  justify-content: space-between;
+  &-card {
+    img {
+      margin-bottom: 16px;
+    }
+    .card-title {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 110%;
+      margin-bottom: 8px;
+    }
+    .card-text {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      color: #8b8b8b;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.feedbacks {
+  margin-bottom: 63px;
+  &__title {
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &__items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    &-item {
+      iframe {
+        margin-bottom: 16px;
+      }
+      .checked {
+        color: orange;
+      }
+    }
+    .customer {
+      margin: 4px 0;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+    }
+    .customer-car {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 140%;
+      color: #8b8b8b;
+    }
+  }
+}
+.feedbacks__showmore {
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: $grey244;
+  padding: 13px 0;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #2c2c2c;
+}
