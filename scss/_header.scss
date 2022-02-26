@@ -1,13 +1,15 @@
 .navbar {
   width: 200px;
   height: 100%;
-  padding: 28px;
+  padding: 20px;
+  padding-left: 0;
   background: $bg-lightgrey;
   &__logo {
     margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
     width: 34px;
+    padding-left: 20px;
     a {
       display: block;
       height: 34px;
@@ -34,13 +36,20 @@
 }
 .navbar__items a {
   text-decoration: none;
-
+  margin: 0 1px 0 0;
   li {
     list-style: none;
-    padding: 8px 0 8px 0;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-weight: 600;
     font-size: 16px;
     color: $black;
+    transition: 0.3s;
+    &:hover {
+      border-left: 3px solid $red;
+      color: rgba(133, 133, 148, 1);
+    }
   }
 }
 .accordion {
@@ -51,12 +60,18 @@
   color: black;
   font-size: 16px;
   cursor: pointer;
-  padding: 8px 0 8px 0;
+  padding: 16px 0 8px 0;
+  padding-bottom: 10px;
+  padding-left: 10px;
   width: 100%;
   text-align: left;
   border: none;
   outline: none;
   transition: 0.4s;
+  &:hover {
+    border-left: 3px solid $red;
+    color: rgba(133, 133, 148, 1);
+  }
   &::after {
     content: "";
     width: 12px;
@@ -64,8 +79,8 @@
     display: block;
     background: url(../assets/svg/down_line.svg);
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 25%;
+    right: 5%;
   }
 }
 .panel {
@@ -74,6 +89,7 @@
   // max-height: 0;
   // transition: max-height 0.3s ease-out;
 }
+
 .active::after {
   content: "";
   width: 12px;
@@ -82,10 +98,17 @@
   background: url(../assets/svg/down_line.svg);
   transform: rotate(180deg);
   position: absolute;
-  top: 12px;
-  right: 10px;
+  top: 25%;
+  right: 5%;
 }
-
+#navAccordion .active::after,
+#navAccordion::after {
+  top: 40%;
+  right: -5%;
+}
+.navbar__socials {
+  padding-left: 20px;
+}
 .navbar__socials a {
   display: block;
   width: 32px;
@@ -237,7 +260,6 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 140px;
   &__text {
     padding-top: 60px;
     display: block;
@@ -347,7 +369,7 @@
   font-size: 13px;
   gap: 16px;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
   margin-bottom: 24px;
   .selectors-options {
     width: 89%;
@@ -444,6 +466,7 @@
   line-height: 140%;
   font-size: 14px;
   cursor: pointer;
+  margin-top: 23px;
 }
 
 .search__form-info {

@@ -1,0 +1,142 @@
+.contacts,
+.footer {
+  display: flex;
+  flex-direction: column;
+  &__title {
+    display: block;
+    margin-bottom: 15px;
+  }
+  &__adress {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 170%;
+    margin-bottom: 15px;
+    color: #323232;
+  }
+  &__communication {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 37px;
+    &-phones {
+      display: flex;
+      flex-direction: column;
+      min-width: 400px;
+    }
+  }
+  .contact {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: nowrap;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+    a {
+      display: flex;
+      padding: 8px;
+      p {
+        margin-top: -4px;
+        margin-left: 3px;
+        font-size: 14px;
+        line-height: 190%;
+        color: #8b8b8b;
+      }
+    }
+    &-tel,
+    &-whatsapp {
+      color: $red;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+
+  &__map {
+    margin-bottom: 34px;
+  }
+  .contacts__map {
+    position: relative;
+  }
+  .contacts__form {
+    position: absolute;
+    z-index: 100;
+    width: 35%;
+    background-color: white;
+    padding: 24px;
+    box-shadow: 0px 9px 34px rgba(58, 68, 83, 0.24);
+    border-radius: 6px;
+    top: 10%;
+    left: 10%;
+    &-title {
+      display: block;
+      margin-bottom: 24px;
+    }
+    &-form {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      overflow: hidden;
+      .form__name,
+      .form__phone {
+        display: flex;
+        flex-direction: column;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 16px;
+        margin-bottom: 16px;
+        input {
+          width: 100%;
+          background-color: $grey241;
+          padding: 12px 16px;
+          border-radius: 4px;
+          outline: none;
+          border: none;
+          margin-top: 9px;
+          &:focus {
+            border: 1px solid $bg-darkgrey;
+          }
+        }
+      }
+    }
+  }
+  .contacts__button {
+    color: $white;
+    background-color: $red;
+    padding: 12px 50px;
+    width: 100%;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    border: none;
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.05);
+      border-radius: 4px;
+    }
+  }
+  .copyright {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 170%;
+    margin-bottom: 11px;
+  }
+  .footer__description {
+    max-width: 320px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 130%;
+    color: #8b8b8b;
+    margin-bottom: 18px;
+  }
+  .footer__gps {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 170%;
+    color: #8b8b8b;
+    padding-left: 9px;
+  }
+}

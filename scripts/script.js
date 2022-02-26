@@ -1,8 +1,9 @@
 //Accordeon with Event Delegation
 document.addEventListener("click", (event) => {
-  event.preventDefault();
   let id = event.target.dataset.toggleId;
-  event.target.classList.toggle("active");
+  if (event.target.classList.contains("accordion")) {
+    event.target.classList.toggle("active");
+  }
   let accordion = document.getElementById(id);
   let custom = document.querySelectorAll(".custom-select");
   let customArr = Array.from(custom);
@@ -14,21 +15,23 @@ document.addEventListener("click", (event) => {
       accordion.style.display = "none";
     }
   } else if (id == "searchAccordion") {
+    event.preventDefault();
     let elem = [];
     elem.push(
       accordion,
       accordion.nextElementSibling,
       accordion.previousElementSibling
     );
-    console.log(elem);
     elem.forEach((item) => {
       console.log(item.style.display);
       if (item.style.display == "none" || item.style.display == "") {
         item.style.display = "block";
       } else if ((item.style.display = "block")) {
-        item.style.display = "none";
+        item.style.display = "";
       }
     });
+    const catalog = document.querySelector(".catalog");
+    catalog.classList.toggle("catalog__active");
   }
 });
 

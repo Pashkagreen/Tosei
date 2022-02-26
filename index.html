@@ -32,7 +32,7 @@
         <a href="#">
           <li class="navbar__item">Аукционы</li>
         </a>
-        <button class="accordion" data-toggle-id="accordion">Информация</button>
+        <button class="accordion" data-toggle-id="accordion" id="navAccordion">Информация</button>
         <div class="panel" id="accordion">
           <a href="#">
             <li class="navbar__item">О нас</li>
@@ -312,7 +312,7 @@
                 <div class="price">
                   <span class="text">Стоимость во Владивостоке</span>
                   <span class="car-price">630 000 ₽</span>
-                  <div class="car-status">В наличии</div>
+                  <div class="car-status-available">В наличии</div>
                 </div>
               </div>
             </div>
@@ -338,7 +338,7 @@
                 <div class="price">
                   <span class="text">Стоимость во Владивостоке</span>
                   <span class="car-price">830 000 ₽</span>
-                  <div class="car-status">В наличии</div>
+                  <div class="car-status-order">Под заказ</div>
                 </div>
               </div>
             </div>
@@ -346,25 +346,25 @@
 
           <div class="catalog__cards-card">
             <div class="card-photo">
-              <img src="./assets/images/honda.png" alt="Car">
+              <img src="./assets/images/prius.png" alt="Car">
             </div>
             <div class="card-info">
-              <span class="car-name">Honda Fit</span>
+              <span class="car-name">Toyota Prius</span>
               <div class="card-options">
                 <div class="option1">
-                  <span class="text">Объём двигателя:&nbsp; <p class="amount">1,2 л.</p></span>
-                  <span class="text">Год:&nbsp; <p class="year">2015</p></span>
-                  <span class="text">Пробег:&nbsp; <p class="mileage">54000</p></span>
+                  <span class="text">Объём двигателя:&nbsp; <p class="amount">1,8 л.</p></span>
+                  <span class="text">Год:&nbsp; <p class="year">2017</p></span>
+                  <span class="text">Пробег:&nbsp; <p class="mileage">59000</p></span>
                   <p class="amount">Под полную пошлину</p>
                 </div>
                 <div class="option2">
-                  <span class="text">Привод:&nbsp; <p class="drive">задний</p></span>
+                  <span class="text">Привод:&nbsp; <p class="drive">передний</p></span>
                   <span class="text">КПП:&nbsp; <p class="transmission">АКПП</p></span>
                 </div>
                 <div class="price">
                   <span class="text">Стоимость во Владивостоке</span>
-                  <span class="car-price">630 000 ₽</span>
-                  <div class="car-status">В наличии</div>
+                  <span class="car-price">930 000 ₽</span>
+                  <div class="car-status-available">В наличии</div>
                 </div>
               </div>
             </div>
@@ -423,8 +423,8 @@
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
             </div>
-            <p class="customer">Геннадий Сергеевич</p>
-            <p class="customer-car">Toyota Allion</p>
+            <p class="customer">Леха Север</p>
+            <p class="customer-car">Mercedes W140</p>
           </div>
           <div class="feedbacks__items-item">
             <iframe width="200" height="130" src="https://www.youtube.com/embed/h5PLKuo5hYw"
@@ -437,10 +437,10 @@
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
             </div>
-            <p class="customer">Геннадий Сергеевич</p>
-            <p class="customer-car">Toyota Allion</p>
+            <p class="customer">Гришка Гвоздь</p>
+            <p class="customer-car">Lexus LX400</p>
           </div>
           <div class="feedbacks__items-item">
             <iframe width="200" height="130" src="https://www.youtube.com/embed/h5PLKuo5hYw"
@@ -453,10 +453,10 @@
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
             </div>
-            <p class="customer">Геннадий Сергеевич</p>
-            <p class="customer-car">Toyota Allion</p>
+            <p class="customer">Михаил Иванович</p>
+            <p class="customer-car">Toyota Land Cruiser 200</p>
           </div>
           <div class="feedbacks__items-item">
             <iframe width="200" height="130" src="https://www.youtube.com/embed/h5PLKuo5hYw"
@@ -468,11 +468,11 @@
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
             </div>
-            <p class="customer">Геннадий Сергеевич</p>
-            <p class="customer-car">Toyota Allion</p>
+            <p class="customer">Витя Макинтош</p>
+            <p class="customer-car">Audi A8</p>
           </div>
 
         </div>
@@ -516,15 +516,129 @@
                 забираете его во Владивостоке.</p>
             </div>
             <div class="advantages__items-card" id="order">
-              <h5 class="card-title">Оставить заявку</h5>
-              <svg>
-                <use xlink:href="/assets/svg/sprite.svg#big-envelope"></use>
-              </svg>
+              <div class="order-card">
+                <h5 class="card-title">Оставить заявку</h5>
+                <svg>
+                  <use xlink:href="/assets/svg/sprite.svg#big-envelope"></use>
+                </svg>
+              </div>
+
             </div>
 
           </div>
         </div>
       </section>
+
+      <section class="contacts inner-wrapper">
+        <h2 class="contacts__title title">Как с нами связаться?</h2>
+        <h3 class="contacts__adress">Владивосток, ул. Фадеева, д. 47 строение 1</h3>
+        <div class="contacts__communication">
+          <div class="contacts__communication-phones">
+            <div class="contact">
+              <svg>
+                <use xlink:href="assets/svg/sprite.svg#phone"></use>
+              </svg>
+              <a href="tel:+7 (423) 208-11-18" class="contact-tel">+7 (423) 208-11-18 <p>- для заказа авто</p></a>
+            </div>
+            <div class="contact">
+              <svg>
+                <use xlink:href="assets/svg/sprite.svg#phone"></use>
+              </svg>
+              <a href="tel:+7 (984) 197-77-78" class="contact-tel">+7 (984) 197-77-78<p>- для заказа авто и мототехники
+                </p></a>
+            </div>
+            <div class="contact">
+              <svg>
+                <use xlink:href="assets/svg/sprite.svg#phone"></use>
+              </svg>
+              <a href="tel:+7 (914) 691-85-05" class="contact-tel">+7 (914) 691-85-05<p>- для заказа спецтехники
+                </p></a>
+            </div>
+          </div>
+          <div class="contacts__communication-whatsapp">
+            <div class="contact">
+              <svg>
+                <use xlink:href="assets/svg/sprite.svg#whatsapp" width="20px" height="20px"></use>
+              </svg>
+              <a href="tel:+7 (984) 198-11-18" class="contact-whatsapp">+7 (984) 198-11-18</a>
+            </div>
+            <div class="contact">
+              <svg>
+                <use xlink:href="assets/svg/sprite.svg#whatsapp" width="20px" height="20px"></use>
+              </svg>
+              <a href="tel:+7 (984) 197-77-78" class="contact-whatsapp">+7 (984) 197-77-78</a>
+            </div>
+          </div>
+          <div class="contacts__communication-email">
+            <div class="contact">
+              <svg>
+                <use xlink:href="assets/svg/sprite.svg#envelope"></use>
+              </svg>
+              <a href="mailto: spec@tosei.ru" class="contact-tel">spec@tosei.ru</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contacts__map">
+          <iframe class="google__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2911.60127740426!2d131.8975344147565!3d43.13390159387353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fb392c836d127a5%3A0xca290adf552a78e3!2z0KLQntCh0K3QmQ!5e0!3m2!1sru!2sby!4v1645862678429!5m2!1sru!2sby"
+            width="1080" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+          <div class="contacts__form">
+            <h2 class="contacts__form-title title">Оставьте заявку</h2>
+
+            <form action="" class="contacts__form-form">
+              <label for="name" class="form__name">Ваше имя
+                <input type="text" name="name" id="name" placeholder="Ввести">
+              </label>
+              <label for="phone" class="form__phone">Контактный телефон
+                <input type="tеl" name="phone" id="phone" placeholder="+7">
+              </label>
+              <button class="contacts__button">Проконсультировать бесплатно</button>
+            </form>
+
+          </div>
+        </div>
+      </section>
+      <section class="footer inner-wrapper">
+        <div class="contacts__communication">
+          <div class="contacts__communication-phones">
+            <span class="copyright">© Тосэй 2021. Все права защищены</span>
+            <span class="footer__description">Продажа грузовой и спецтехники, легковых автомобилей, водной техники.
+              Любая техника из Японии, США, Кореи, Китая и
+              Сингапура. Авто с аукционов.</span>
+            <div class="contact">
+              <svg>
+                <use xlink:href="assets/svg/sprite.svg#gps" width="20px" height="20px"></use>
+              </svg>
+              <p class="footer__gps">Владивосток, ул. Фадеева, д. 47, строение 1</p>
+            </div>
+          </div>
+          <div class="contacts__communication-whatsapp">
+            <div class="contact">
+              <svg>
+                <use xlink:href="assets/svg/sprite.svg#whatsapp" width="20px" height="20px"></use>
+              </svg>
+              <a href="tel:+7 (984) 198-11-18" class="contact-whatsapp">+7 (984) 198-11-18</a>
+            </div>
+            <div class="contact">
+              <svg>
+                <use xlink:href="assets/svg/sprite.svg#whatsapp" width="20px" height="20px"></use>
+              </svg>
+              <a href="tel:+7 (984) 197-77-78" class="contact-whatsapp">+7 (984) 197-77-78</a>
+            </div>
+          </div>
+          <div class="contacts__communication-email">
+            <div class="contact">
+              <svg>
+                <use xlink:href="assets/svg/sprite.svg#envelope"></use>
+              </svg>
+              <a href="mailto: spec@tosei.ru" class="contact-tel">spec@tosei.ru</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
 
 
