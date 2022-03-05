@@ -14,7 +14,7 @@
   <div class="container">
     <div class="navbar">
       <div class="navbar__logo">
-        <a href="#">
+        <a href="/index.html">
           <svg class="logo">
             <use xlink:href="/assets/svg/sprite.svg#logo"></use>
           </svg>
@@ -23,10 +23,10 @@
       </div>
 
       <ul class="navbar__items">
-        <a href="#">
+        <a href="#about">
           <li class="navbar__item">Услуги</li>
         </a>
-        <a href="#">
+        <a href="/catalog.html">
           <li class="navbar__item">Каталог техники</li>
         </a>
         <a href="#">
@@ -34,13 +34,13 @@
         </a>
         <button class="accordion" data-toggle-id="accordion" id="navAccordion">Информация</button>
         <div class="panel" id="accordion">
-          <a href="#">
+          <a href="#advantages">
             <li class="navbar__item">О нас</li>
           </a>
-          <a href="#">
+          <a href="#feedbacks">
             <li class="navbar__item">Отзывы</li>
           </a>
-          <a href="#">
+          <a href="#contacts">
             <li class="navbar__item">Контакты</li>
           </a>
         </div>
@@ -89,10 +89,10 @@
             <spun class="burger-menu_lines"></spun>
           </a>
           <ul class="burger-menu_nav">
-            <a href="#" class="burger-menu_link">
+            <a href="#about" class="burger-menu_link">
               <li>Услуги</li>
             </a>
-            <a href="#" class="burger-menu_link">
+            <a href="/catalog.html" class="burger-menu_link">
               <li>Каталог техники</li>
             </a>
             <a href="#" class="burger-menu_link">
@@ -102,13 +102,13 @@
               <li>Информация</li>
             </a>
 
-            <a href="#" class="burger-menu_link">
+            <a href="#advantages" class="burger-menu_link">
               <li>О нас</li>
             </a>
-            <a href="#" class="burger-menu_link">
+            <a href="#feedbacks" class="burger-menu_link">
               <li>Отзывы</li>
             </a>
-            <a href="#" class="burger-menu_link">
+            <a href="#contacts" class="burger-menu_link">
               <li>Контакты</li>
             </a>
             <div class="header__info" id="headerInfo">
@@ -129,12 +129,12 @@
           <div class="checkboxes">
 
             <label class="tax">Полная пошлина
-              <input type="checkbox" checked="checked">
+              <input type="checkbox" checked="checked" id="fulltax">
               <span class="checkmark"></span>
             </label>
 
             <label class="tax">Распил или конструктор
-              <input type="checkbox">
+              <input type="checkbox" id="halftax">
               <span class="checkmark"></span>
             </label>
           </div>
@@ -145,12 +145,9 @@
                 <span class="custom-select-name">Тип техники</span>
                 <select>
                   <option value="0">Не выбрано</option>
-                  <option value="1">Автомобиль</option>
-                  <option value="2">Мотоцикл</option>
-                  <option value="3">Микроавтобус</option>
-                  <option value="4">Фургон</option>
-                  <option value="5">Прицеп</option>
-                  <option value="6">Автобус</option>
+                  <option value="car">Автомобиль</option>
+                  <option value="bike">Мотоцикл</option>
+                  <option value="bus">Автобус</option>
                 </select>
               </div>
 
@@ -164,7 +161,7 @@
                   <option value="4">Ford</option>
                   <option value="5">Honda</option>
                   <option value="6">Jaguar</option>
-                  <option value="7">Land Rover</option>
+                  <option value="7">Range Rover</option>
                   <option value="8">Mercedes</option>
                   <option value="9">Mini</option>
                   <option value="10">Nissan</option>
@@ -198,10 +195,15 @@
                 <span class="custom-select-name">Год выпуска</span>
                 <select>
                   <option value="0">От</option>
-                  <option value="1">2022</option>
-                  <option value="2">2021</option>
-                  <option value="3">2020</option>
-                  <option value="4">2019</option>
+                  <option value="2022">2022</option>
+                  <option value="2021">2021</option>
+                  <option value="2020">2020</option>
+                  <option value="2019">2019</option>
+                  <option value="2018">2018</option>
+                  <option value="2017">2017</option>
+                  <option value="2016">2016</option>
+                  <option value="2015">2015</option>
+                  <option value="2014">2014</option>
                 </select>
               </div>
 
@@ -209,11 +211,15 @@
                 <span class="custom-select-name"></span>
                 <select>
                   <option value="0">До</option>
-                  <option value="1">2021</option>
-                  <option value="2">2020</option>
-                  <option value="3">2019</option>
-                  <option value="4">2018</option>
-                  <option value="5">2017</option>
+                  <option value="2022">2022</option>
+                  <option value="2021">2021</option>
+                  <option value="2020">2020</option>
+                  <option value="2019">2019</option>
+                  <option value="2018">2018</option>
+                  <option value="2017">2017</option>
+                  <option value="2016">2016</option>
+                  <option value="2015">2015</option>
+                  <option value="2014">2014</option>
                 </select>
               </div>
 
@@ -224,8 +230,8 @@
                 <span class="custom-select-name">Трансмиссия</span>
                 <select>
                   <option value="0">Не выбрано</option>
-                  <option value="0">МКПП</option>
-                  <option value="1">АКПП</option>
+                  <option value="manual">МКПП</option>
+                  <option value="automatic">АКПП</option>
                 </select>
               </div>
 
@@ -233,9 +239,9 @@
                 <span class="custom-select-name">Пробег</span>
                 <select>
                   <option value="0">Не выбрано</option>
-                  <option value="1">До 100 тыс</option>
-                  <option value="2">До 200 тыс</option>
-                  <option value="2">До 300 тыс</option>
+                  <option value="100000">До 100 тыс</option>
+                  <option value="200000">До 200 тыс</option>
+                  <option value="300000">До 300 тыс</option>
 
                 </select>
               </div>
@@ -244,10 +250,10 @@
                 <span class="custom-select-name">Цена</span>
                 <select>
                   <option value="0">Не выбрано</option>
-                  <option value="1">до 200 тыс. руб.</option>
-                  <option value="1">до 500 тыс. руб.</option>
-                  <option value="1">до 1 млн. руб.</option>
-                  <option value="1">выше 1 млн. руб.</option>
+                  <option value="200000">до 200 тыс. руб.</option>
+                  <option value="500000">до 500 тыс. руб.</option>
+                  <option value="1000000">до 1 млн. руб.</option>
+                  <option value="1000001">выше 1 млн. руб.</option>
                 </select>
               </div>
             </div>
@@ -276,17 +282,17 @@
         <form action="" class="catalog__form">
           <label>
             Все
-            <input type="radio" class="modern-radio" value="1" name="a">
+            <input type="radio" class="all" value="1" name="a">
             <span></span>
           </label>
           <label>
             В наличии
-            <input type="radio" class="modern-radio" value="2" name="a">
+            <input type="radio" class="available" value="2" name="a">
             <span></span>
           </label>
           <label>
             Под заказ
-            <input type="radio" class="modern-radio" value="2" name="a">
+            <input type="radio" class="nonavailable" value="2" name="a">
             <span></span>
           </label>
         </form>
@@ -297,13 +303,16 @@
               <img src="./assets/images/honda.png" alt="Car">
             </div>
             <div class="card-info">
-              <span class="car-name">Honda Fit</span>
+              <span class="car-name">
+                <span class="car-mark">Honda</span>
+                <span class="car-model">Fit</span>
+              </span>
               <div class="card-options">
                 <div class="option1">
                   <span class="text">Объём двигателя:&nbsp; <p class="amount">1,2 л.</p></span>
                   <span class="text">Год:&nbsp; <p class="year">2015</p></span>
                   <span class="text">Пробег:&nbsp; <p class="mileage">54000</p></span>
-                  <p class="amount">Под полную пошлину</p>
+                  <p class="amount tax-text">Под полную пошлину</p>
                 </div>
                 <div class="option2">
                   <span class="text">Привод:&nbsp; <p class="drive">задний</p></span>
@@ -323,13 +332,16 @@
               <img src="./assets/images/bmw.png" alt="Car">
             </div>
             <div class="card-info">
-              <span class="car-name">BMW X5</span>
+              <span class="car-name">
+                <span class="car-mark">BMW</span>
+                <span class="car-model">X5</span>
+              </span>
               <div class="card-options">
                 <div class="option1">
                   <span class="text">Объём двигателя:&nbsp; <p class="amount">3,0 л.</p></span>
                   <span class="text">Год:&nbsp; <p class="year">2008</p></span>
                   <span class="text">Пробег:&nbsp; <p class="mileage">500 000</p></span>
-                  <p class="amount">Под полную пошлину</p>
+                  <p class="amount tax-text">Под полную пошлину</p>
                 </div>
                 <div class="option2">
                   <span class="text">Привод:&nbsp; <p class="drive">задний</p></span>
@@ -349,13 +361,16 @@
               <img src="./assets/images/prius.png" alt="Car">
             </div>
             <div class="card-info">
-              <span class="car-name">Toyota Prius</span>
+              <span class="car-name">
+                <span class="car-mark">Toyota</span>
+                <span class="car-model">Prius</span>
+              </span>
               <div class="card-options">
                 <div class="option1">
                   <span class="text">Объём двигателя:&nbsp; <p class="amount">1,8 л.</p></span>
                   <span class="text">Год:&nbsp; <p class="year">2017</p></span>
                   <span class="text">Пробег:&nbsp; <p class="mileage">59000</p></span>
-                  <p class="amount">Под полную пошлину</p>
+                  <p class="amount tax-text">Под полную пошлину</p>
                 </div>
                 <div class="option2">
                   <span class="text">Привод:&nbsp; <p class="drive">передний</p></span>
@@ -371,10 +386,10 @@
           </div>
         </div>
 
-        <button class="catalog__showmore">Показать ещё</button>
+        <a href="/catalog.html" class="catalog__showmore">Показать ещё</a>
       </section>
 
-      <section class="advantages inner-wrapper">
+      <section class="advantages inner-wrapper" id="advantages">
         <h2 class="advantages__title title">Наши преимущества</h2>
         <div class="advantages__items">
           <div class="advantages__items-card">
@@ -407,7 +422,7 @@
         </div>
       </section>
 
-      <section class="feedbacks inner-wrapper">
+      <section class="feedbacks inner-wrapper" id="feedbacks">
         <h2 class="feedbacks__title title">Отзывы</h2>
         <div class="feedbacks__items">
           <div class="feedbacks__items-item">
@@ -480,7 +495,7 @@
           class="feedbacks__showmore">Ещё отзывы</a>
       </section>
 
-      <section class="about inner-wrapper">
+      <section class="about inner-wrapper" id="about">
         <img src="./assets/images/man.png" alt="#" class="man">
         <div class="about__info">
           <h2 class="about__info-title title">Как происходит покупка</h2>
@@ -522,14 +537,36 @@
                   <use xlink:href="/assets/svg/sprite.svg#big-envelope"></use>
                 </svg>
               </div>
-
             </div>
-
           </div>
         </div>
+
+        <!-- Модальный -->
+        <div id="myModal" class="modal">
+          <!-- Модальное содержание -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="contacts__form">
+              <h2 class="contacts__form-title title">Оставьте заявку</h2>
+              <form action="" class="contacts__form-form">
+                <label for="name" class="form__name">Ваше имя
+                  <input type="text" name="name" id="name" placeholder="Ввести">
+                </label>
+                <label for="phone" class="form__phone">Контактный телефон
+                  <input type="tеl" name="phone" id="phone" placeholder="+7">
+                </label>
+                <label for="phone" class="form__request">Вопрос
+                  <textarea name="request" id="request" placeholder=""></textarea>
+                </label>
+                <button class="contacts__button">Проконсультировать бесплатно</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
       </section>
 
-      <section class="contacts inner-wrapper">
+      <section class="contacts inner-wrapper" id="contacts">
         <h2 class="contacts__title title">Как с нами связаться?</h2>
         <h3 class="contacts__adress">Владивосток, ул. Фадеева, д. 47 строение 1</h3>
         <div class="contacts__communication">
@@ -586,7 +623,6 @@
           </iframe>
           <div class="contacts__form">
             <h2 class="contacts__form-title title">Оставьте заявку</h2>
-
             <form action="" class="contacts__form-form">
               <label for="name" class="form__name">Ваше имя
                 <input type="text" name="name" id="name" placeholder="Ввести">
@@ -650,6 +686,8 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="/scripts/script.js"></script>
+  <script src="/scripts/renderData.js"></script>
+  <script src="/scripts/mailer.js"></script>c
 </body>
 
 </html>

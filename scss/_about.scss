@@ -67,3 +67,96 @@
     transition: 0.3s;
   }
 }
+
+// Modal window
+/* Модальный (фон) */
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed; /* Оставаться на месте */
+  z-index: 200; /* Сидеть на вершине */
+  left: 0;
+  top: 0;
+  width: 100%; /* Полная ширина */
+  height: 100%; /* Полная высота */
+  /* Включите прокрутку, если это необходимо */
+  background-color: rgb(0, 0, 0); /* Цвет запасной вариант */
+  background-color: rgba(0, 0, 0, 0.4); /* Черный с непрозрачностью */
+}
+
+/* Модальное содержание/коробка */
+.modal-content {
+  width: 35%;
+  background-color: white;
+  padding: 24px;
+  box-shadow: 0px 9px 34px rgba(58, 68, 83, 0.24);
+  border-radius: 6px;
+  margin: 5% auto;
+  .contacts__form-title {
+    display: block;
+    margin-bottom: 24px;
+  }
+  .contacts__form-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    .form__name,
+    .form__phone,
+    .form__request {
+      display: flex;
+      flex-direction: column;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 16px;
+      margin-bottom: 16px;
+      input,
+      textarea {
+        width: 100%;
+        background-color: $grey241;
+        padding: 12px 16px;
+        border-radius: 4px;
+        outline: none;
+        border: none;
+        margin-top: 9px;
+        &:focus {
+          border: 1px solid $bg-darkgrey;
+        }
+        resize: none;
+      }
+    }
+    .form__request input {
+      height: 100px;
+    }
+  }
+  .contacts__button {
+    color: $white;
+    background-color: $red;
+    padding: 12px 50px;
+    width: 100%;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    border: none;
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.05);
+      border-radius: 4px;
+    }
+  }
+}
+
+/* Кнопка закрытия */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

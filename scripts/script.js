@@ -1,9 +1,11 @@
 //Accordeon with Event Delegation
 document.addEventListener("click", (event) => {
   let id = event.target.dataset.toggleId;
+
   if (event.target.classList.contains("accordion")) {
     event.target.classList.toggle("active");
   }
+
   let accordion = document.getElementById(id);
   let custom = document.querySelectorAll(".custom-select");
   let customArr = Array.from(custom);
@@ -23,7 +25,6 @@ document.addEventListener("click", (event) => {
       accordion.previousElementSibling
     );
     elem.forEach((item) => {
-      console.log(item.style.display);
       if (item.style.display == "none" || item.style.display == "") {
         item.style.display = "block";
       } else if ((item.style.display = "block")) {
@@ -36,7 +37,6 @@ document.addEventListener("click", (event) => {
 });
 
 // Burger-menu
-
 function burgerMenu(selector) {
   let menu = $(selector);
   let button = menu.find(".burger-menu_button", ".burger-menu_lines");
@@ -150,3 +150,29 @@ function closeAllSelect(elmnt) {
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
+
+// Modal Window
+// Получить модальный
+var modal = document.getElementById("myModal");
+
+// Получить кнопку, которая открывает модальный
+var btn = document.getElementById("order");
+// Получить элемент <span>, который закрывает модальный
+var span = document.getElementsByClassName("close")[0];
+
+// Когда пользователь нажимает на кнопку, откройте модальный
+btn.onclick = function () {
+  modal.style.display = "block";
+};
+
+// Когда пользователь нажимает на <span> (x), закройте модальное окно
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+// Когда пользователь щелкает в любом месте за пределами модального, закройте его
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};

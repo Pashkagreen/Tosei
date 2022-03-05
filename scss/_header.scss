@@ -1,5 +1,5 @@
 .navbar {
-  width: 200px;
+  width: 15%;
   height: 100%;
   padding: 20px;
   padding-left: 0;
@@ -104,7 +104,7 @@
 #navAccordion .active::after,
 #navAccordion::after {
   top: 40%;
-  right: -5%;
+  right: 5%;
 }
 .navbar__socials {
   padding-left: 20px;

@@ -57,6 +57,7 @@ $white: white;
 
 body {
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -66,7 +67,7 @@ body {
 }
 
 .wrapper {
-  min-width: 1080px;
+  width: 85%;
 }
 
 .inner-wrapper {
