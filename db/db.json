@@ -1,7 +1,6 @@
 {
   "db": [
     { 
-      "id": "1",
       "type": "car",
       "mark": "Honda",
       "model": "Fit",
@@ -11,13 +10,12 @@
       "mileage": "54000",
       "drive": "Передний",
       "transmission": "АКПП",
-      "price": "630 000",
+      "price": "630000",
       "available": "В наличии",
       "status": "car-status-available",
       "taxText": "Под полную пошлину"
     },
     { 
-      "id": "2",
       "type": "car",
       "mark": "Audi",
       "model": "A8",
@@ -27,13 +25,12 @@
       "mileage": "14000",
       "drive": "Задний",
       "transmission": "АКПП",
-      "price": "930 000",
+      "price": "930000",
       "available": "В наличии",
       "status": "car-status-available",
       "taxText": "Под полную пошлину"
     },
     { 
-      "id": "3",
       "type": "car",
       "mark": "BMW",
       "model": "2-series Active Tourer",
@@ -49,14 +46,13 @@
       "taxText": "Под полную пошлину"
     },
     { 
-      "id": "4",
       "type": "car",
       "mark": "Citroen",
       "model": "C5",
       "photo": "./db/carImages/citroen.jpg",
       "amount": "1,6 л.",
       "year": "2015",
-      "mileage": "234 000",
+      "mileage": "234000",
       "drive": "Передний",
       "transmission": "АКПП",
       "price": "330000",
@@ -65,7 +61,6 @@
       "taxText": "Под полную пошлину"
     },
     { 
-      "id": "5",
       "type": "car",
       "mark": "Ford",
       "model": "Explorer",
@@ -75,13 +70,12 @@
       "mileage": "24000",
       "drive": "Передний",
       "transmission": "АКПП",
-      "price": "750 000",
+      "price": "750000",
       "available": "В наличии",
       "status": "car-status-available",
       "taxText": "Под полную пошлину"
     },
     { 
-      "id": "6",
       "type": "car",
       "mark": "Jaguar",
       "model": "F-Pace",
@@ -97,7 +91,6 @@
       "taxText": "Под полную пошлину"
     },
     { 
-      "id": "7",
       "type": "car",
       "mark": "Range Rover",
       "model": "Evoque",
@@ -107,45 +100,42 @@
       "mileage": "14000",
       "drive": "Задний",
       "transmission": "АКПП",
-      "price": "9 999 000",
+      "price": "9999000",
       "available": "В наличии",
       "status": "car-status-available",
       "taxText": "Под полную пошлину"
     },
     { 
-      "id": "8",
       "type": "car",
       "mark": "Mercedes",
       "model": "S-class W221",
       "photo": "./db/carImages/w221.jpg",
       "amount": "5,3 л.",
-      "year": "2006",
-      "mileage": "854000",
+      "year": "2016",
+      "mileage": "124000",
       "drive": "Задний",
       "transmission": "АКПП",
-      "price": "150 000",
+      "price": "150000",
       "available": "В наличии",
       "status": "car-status-available",
       "taxText": "Под полную пошлину"
     },
     { 
-      "id": "9",
       "type": "car",
       "mark": "Mini",
       "model": "Countryman",
       "photo": "./db/carImages/countryman.jpg",
       "amount": "2,0 л.",
       "year": "2018",
-      "mileage": "59000",
+      "mileage": "259000",
       "drive": "Передний",
       "transmission": "АКПП",
-      "price": "1 230 000",
+      "price": "1230000",
       "available": "В наличии",
       "status": "car-status-available",
       "taxText": "Под полную пошлину"
     },
     { 
-      "id": "10",
       "type": "car",
       "mark": "Honda",
       "model": "Fit",
@@ -155,13 +145,12 @@
       "mileage": "54000",
       "drive": "Передний",
       "transmission": "АКПП",
-      "price": "630 000",
+      "price": "630000",
       "available": "В наличии",
       "status": "car-status-available",
       "taxText": "Под полную пошлину"
     },
     { 
-      "id": "11",
       "type": "car",
       "mark": "Nissan",
       "model": "Leaf",
@@ -177,7 +166,6 @@
       "taxText": "Под полную пошлину"
     },
     { 
-      "id": "12",
       "type": "car",
       "mark": "Nissan",
       "model": "Qashkai",
@@ -187,13 +175,12 @@
       "mileage": "54000",
       "drive": "Передний",
       "transmission": "АКПП",
-      "price": "630 000",
+      "price": "630000",
       "available": "В наличии",
       "status": "car-status-available",
       "taxText": "Под полную пошлину"
     },
     { 
-      "id": "13",
       "type": "car",
       "mark": "Toyota",
       "model": "Prius",
@@ -203,29 +190,27 @@
       "mileage": "54000",
       "drive": "Передний",
       "transmission": "АКПП",
-      "price": "630 000",
+      "price": "1630000",
       "available": "В наличии",
       "status": "car-status-available",
       "taxText": "Под полную пошлину"
     },
     { 
-      "id": "14",
       "type": "car",
       "mark": "Volvo",
       "model": "XC90",
       "photo": "./db/carImages/volvoxc90.jpg",
       "amount": "2,5 л.",
       "year": "2020",
-      "mileage": "234000",
+      "mileage": "267000",
       "drive": "Задний",
       "transmission": "АКПП",
-      "price": "3 630 000",
+      "price": "3630000",
       "available": "В наличии",
       "status": "car-status-available",
       "taxText": "Под полную пошлину"
     },
     {
-      "id": "14",
       "type": "car",
       "mark": "Nissan",
       "model": "X-Trail",
@@ -235,7 +220,7 @@
       "mileage": "4000",
       "drive": "Задний",
       "transmission": "АКПП",
-      "price": "2 630 000",
+      "price": "2630000",
       "available": "Под заказ",
       "status": "car-status-order",
       "taxText": "Под полную пошлину"

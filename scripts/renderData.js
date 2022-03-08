@@ -7,7 +7,7 @@ function onPageLoaded() {
   const availableLink = document.querySelector(".car-status-available");
   const nonAvailableLink = document.querySelector(".car-status-order");
   const btn = document.querySelector(".button");
-  const selectors = document.querySelector(".selectors-options");
+
   // Отрисовка карточек
   const renderCards = (cards) => {
     cardContainer.innerHTML = "";
@@ -56,7 +56,7 @@ function onPageLoaded() {
         const array = category
           ? data.filter((item) => item.available === category)
           : data;
-        console.log(array); // Фильтрация входящих данных по запросу
+        // Фильтрация входящих данных по запросу
         localStorage.setItem("data", JSON.stringify(array));
         renderCards(JSON.parse(localStorage.getItem("data")));
       });
@@ -81,12 +81,43 @@ function onPageLoaded() {
     }
   });
 
-  const selectCards = () => {};
+  let selectors = document.querySelector(".selectors-options");
+  let arrayProperties = {};
+  selectors.addEventListener("click", (event) => {
+    if (event.target.tagName === "LI") {
+      let option =
+        event.target.parentElement.parentElement.previousElementSibling;
+      arrayProperties[option.name] = option.value;
+      localStorage.setItem("prop", JSON.stringify(arrayProperties));
+    }
+  });
 
   btn.addEventListener("click", (e) => {
     e.preventDefault();
-    selectCards();
+    let data = JSON.parse(localStorage.getItem("data"));
+    let prop = JSON.parse(localStorage.getItem("prop"));
+    let filterCards = (data, filter) => {
+      let res = data.filter((obj) =>
+        Object.entries(filter).every(([prop, find]) => find.includes(obj[prop]))
+      );
+      if (!Object.keys(res).length) {
+        showError();
+      } else {
+        renderCards(res);
+      }
+    };
+    filterCards(data, prop);
   });
+
+  function showError() {
+    cardContainer.innerHTML = "";
+    const errorMsg = document.createElement("h2");
+    errorMsg.classList.add("title");
+    errorMsg.innerText = "По вашему запросу ничего не найдено";
+    cardContainer.append(errorMsg);
+    const showMoreBtn = document.querySelector(".catalog__showmore");
+    showMoreBtn.style.display = "none";
+  }
 }
 
 document.addEventListener("DOMContentLoaded", onPageLoaded);
