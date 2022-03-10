@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/custom-select.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -26,11 +27,11 @@
       </div>
 
       <ul class="navbar__items">
+        <a href="/index.html">
+          <li class="navbar__item">Главная</li>
+        </a>
         <a href="#about">
           <li class="navbar__item">Услуги</li>
-        </a>
-        <a href="/catalog.html">
-          <li class="navbar__item">Каталог техники</li>
         </a>
         <a href="#">
           <li class="navbar__item">Аукционы</li>
@@ -71,7 +72,7 @@
     <div class="wrapper">
 
       <div class="navbar__logo" id="respLogo">
-        <a href="#">
+        <a href="/index.html">
           <svg class="logo">
             <use xlink:href="/assets/svg/sprite.svg#logo"></use>
           </svg>
@@ -317,8 +318,13 @@
 
         <div class="catalog__cards">
           <div class="catalog__cards-card">
-            <div class="card-photo">
-              <img src="./assets/images/honda.png" alt="Car">
+            <div class="card-photo swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./assets/images/honda.png" alt="Car"></div>
+                <div class="swiper-slide"><img src="db/carImages/honda2.jpg" alt="Car"></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
             <div class="card-info">
               <span class="car-name">
@@ -404,7 +410,7 @@
           </div>
         </div>
 
-        <a href="/catalog.html" class="catalog__showmore">Показать ещё</a>
+        <a href="#" class="catalog__showmore">Показать ещё</a>
       </section>
 
       <section class="advantages inner-wrapper" id="advantages">
@@ -700,14 +706,13 @@
   </div>
 
 
-
+  <script src="/scripts/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="/scripts/custom-select.js"></script>
   <script src="/scripts/script.js"></script>
-  <script src="/scripts/renderData.js"></script>
   <script src="/scripts/mailer.js"></script>
-
+  <script src="/scripts/renderData.js"></script>
 </body>
 
 </html>

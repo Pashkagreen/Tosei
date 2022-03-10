@@ -1,10 +1,12 @@
 {
   "db": [
     { 
+      "id" : "1",
       "type": "car",
       "mark": "Honda",
       "model": "Fit",
       "photo": "./db/carImages/honda.png",
+      "photo2": "./db/carImages/honda2.jpg",
       "amount": "1,2 л.",
       "year": "2015",
       "mileage": "54000",
@@ -16,10 +18,12 @@
       "taxText": "Под полную пошлину"
     },
     { 
+      "id" : "2",
       "type": "car",
       "mark": "Audi",
       "model": "A8",
       "photo": "./db/carImages/audia8.jpg",
+      "photo2": "./db/carImages/audia82.jpg",
       "amount": "2,0 л.",
       "year": "2018",
       "mileage": "14000",
@@ -31,10 +35,12 @@
       "taxText": "Под полную пошлину"
     },
     { 
+      "id" : "3",
       "type": "car",
       "mark": "BMW",
       "model": "2-series Active Tourer",
       "photo": "./db/carImages/bmwactivetourer.jpg",
+      "photo2": "./db/carImages/bmwactivetourer2.jpg",
       "amount": "1,5 л.",
       "year": "2017",
       "mileage": "154000",
@@ -46,10 +52,12 @@
       "taxText": "Под полную пошлину"
     },
     { 
+      "id" : "4",
       "type": "car",
       "mark": "Citroen",
       "model": "C5",
       "photo": "./db/carImages/citroen.jpg",
+      "photo2": "./db/carImages/citroen2.jpg",
       "amount": "1,6 л.",
       "year": "2015",
       "mileage": "234000",
@@ -61,10 +69,12 @@
       "taxText": "Под полную пошлину"
     },
     { 
+      "id" : "5",
       "type": "car",
       "mark": "Ford",
       "model": "Explorer",
       "photo": "./db/carImages/fordexplorer.jpg",
+      "photo2": "./db/carImages/fordexplorer2.jpg",
       "amount": "4,0 л.",
       "year": "2019",
       "mileage": "24000",
@@ -76,10 +86,12 @@
       "taxText": "Под полную пошлину"
     },
     { 
+      "id" : "6",
       "type": "car",
       "mark": "Jaguar",
       "model": "F-Pace",
       "photo": "./db/carImages/jaguar.jpg",
+      "photo2": "./db/carImages/jaguar2.jpg",
       "amount": "3,0 л.",
       "year": "2020",
       "mileage": "99000",
@@ -91,10 +103,12 @@
       "taxText": "Под полную пошлину"
     },
     { 
+      "id" : "7",
       "type": "car",
       "mark": "Range Rover",
       "model": "Evoque",
       "photo": "./db/carImages/rrevoque.jpg",
+      "photo2": "./db/carImages/rrevoque2.jpg",
       "amount": "3,0 л.",
       "year": "2021",
       "mileage": "14000",
@@ -106,10 +120,12 @@
       "taxText": "Под полную пошлину"
     },
     { 
+      "id" : "8",
       "type": "car",
       "mark": "Mercedes",
       "model": "S-class W221",
       "photo": "./db/carImages/w221.jpg",
+      "photo2": "./db/carImages/w2212.jpg",
       "amount": "5,3 л.",
       "year": "2016",
       "mileage": "124000",
@@ -121,10 +137,12 @@
       "taxText": "Под полную пошлину"
     },
     { 
+      "id" : "9",
       "type": "car",
       "mark": "Mini",
       "model": "Countryman",
       "photo": "./db/carImages/countryman.jpg",
+      "photo2": "./db/carImages/countryman2.jpg",
       "amount": "2,0 л.",
       "year": "2018",
       "mileage": "259000",
@@ -136,10 +154,12 @@
       "taxText": "Под полную пошлину"
     },
     { 
+      "id" : "10",
       "type": "car",
       "mark": "Honda",
       "model": "Fit",
       "photo": "./db/carImages/honda.png",
+      "photo2": "./db/carImages/honda2.jpg",
       "amount": "1,2 л.",
       "year": "2015",
       "mileage": "54000",
@@ -151,10 +171,12 @@
       "taxText": "Под полную пошлину"
     },
     { 
+      "id" : "11",
       "type": "car",
       "mark": "Nissan",
       "model": "Leaf",
       "photo": "./db/carImages/leaf.jpg",
+      "photo2": "./db/carImages/leaf2.jpg",
       "amount": "1,3 л.",
       "year": "2017",
       "mileage": "54000",
@@ -166,10 +188,12 @@
       "taxText": "Под полную пошлину"
     },
     { 
+      "id" : "12",
       "type": "car",
       "mark": "Nissan",
       "model": "Qashkai",
       "photo": "./db/carImages/qashkai.jpg",
+      "photo2": "./db/carImages/qashkai2.jpeg",
       "amount": "1,2 л.",
       "year": "2015",
       "mileage": "54000",
@@ -181,10 +205,12 @@
       "taxText": "Под полную пошлину"
     },
     { 
+      "id" : "13",
       "type": "car",
       "mark": "Toyota",
       "model": "Prius",
       "photo": "./db/carImages/prius.png",
+      "photo2": "./db/carImages/prius2.jpeg",
       "amount": "1,8 л.",
       "year": "2015",
       "mileage": "54000",
@@ -196,10 +222,12 @@
       "taxText": "Под полную пошлину"
     },
     { 
+      "id" : "14",
       "type": "car",
       "mark": "Volvo",
       "model": "XC90",
       "photo": "./db/carImages/volvoxc90.jpg",
+      "photo2": "./db/carImages/volvoxc902.png",
       "amount": "2,5 л.",
       "year": "2020",
       "mileage": "267000",
@@ -211,10 +239,12 @@
       "taxText": "Под полную пошлину"
     },
     {
+      "id" : "15",
       "type": "car",
       "mark": "Nissan",
       "model": "X-Trail",
       "photo": "./db/carImages/x-trail.jpeg",
+      "photo2": "./db/carImages/x-trail2.jpeg",
       "amount": "2,8 л.",
       "year": "2019",
       "mileage": "4000",

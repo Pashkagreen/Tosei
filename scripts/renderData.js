@@ -15,8 +15,13 @@ function onPageLoaded() {
       const card = document.createElement("div");
       card.classList.add("catalog__cards-card");
       card.innerHTML = `
-        <div class="card-photo">
-              <img src="${car.photo}" alt="${car.name}">
+            <div class="card-photo swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="${car.photo}" alt="Car"></div>
+                <div class="swiper-slide"><img src="${car.photo2}" alt="Car"></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
             <div class="card-info">
               <span class="car-name">
@@ -43,6 +48,7 @@ function onPageLoaded() {
             </div>
       `;
       cardContainer.append(card);
+      createSwiper();
     });
   };
 
@@ -117,6 +123,16 @@ function onPageLoaded() {
     cardContainer.append(errorMsg);
     const showMoreBtn = document.querySelector(".catalog__showmore");
     showMoreBtn.style.display = "none";
+  }
+
+  function createSwiper() {
+    // Swiper initialization
+    let swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
   }
 }
 

@@ -7,12 +7,13 @@ document.addEventListener("click", (event) => {
   }
 
   let accordion = document.getElementById("select-6");
+  let panel = document.querySelector(".panel");
 
   if (id == "accordion") {
     if (event.target.classList.contains("active")) {
-      accordion.style.display = "block";
+      panel.style.display = "block";
     } else if (!event.target.classList.contains("active")) {
-      accordion.style.display = "none";
+      panel.style.display = "none";
     }
   } else if (id == "searchAccordion") {
     event.preventDefault();
@@ -92,3 +93,14 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+setTimeout(() => {
+  modal.style.display = "block";
+}, 10000);
+
+let swiper = new Swiper(".mySwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
