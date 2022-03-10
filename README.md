@@ -1,5 +1,5 @@
 # Tosei
-Car saler multipage website with API
+Car saler website with using API
 Возможности:
 - Сортировка автомобилей по выведенным категориям
 - Просмотр информации о компании
